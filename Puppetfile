@@ -1,6 +1,6 @@
 forge "https://forge.puppetlabs.com/"
 
-mod 'helloworld',
-  :git => 'git@github.com:Jonnypysc/puppet-helloworld.git',
+mod 'serverbase',
+  :git => 'git@github.com:Jonnypysc/serverbase.git',
   :ref => 'master'
   
