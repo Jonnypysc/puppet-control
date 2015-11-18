@@ -43,7 +43,7 @@ node 'default' {
 		mode  => '0644',
 		content => "This server is managed by PE01\n",
 	}
-#	include serverbase
+	include serverbase
 }
 
 
