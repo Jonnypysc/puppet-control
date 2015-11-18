@@ -35,11 +35,16 @@ File { backup => 'main' }
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
 
-#node default {
-  # This is where you can declare classes for all nodes.
-  # Example:
-  #   class { 'my_class': }
-#}
+#Serverbase Module
+node 'default' {
+	file { '/etc/motd' :
+		owner => 'root',
+		group => 'root',
+		mode  => '0644',
+		content => "This server is managed by PE01\n",
+	}
+#	include serverbase
+}
 
 
 
