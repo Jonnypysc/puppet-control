@@ -41,7 +41,7 @@ node 'default' {
 		owner => 'root',
 		group => 'root',
 		mode  => '0644',
-		content => "This server is managed by PE01\n",
+		content => "This server is managed by PE01-TEST\n",
 	}
 	include serverbase
 }
